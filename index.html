@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="Front-end-lab 1" name="description">
+    <meta content="KPI, Front-end, HTML, CSS, JavaScript" name="keywords">
+    <title>Бардах Максим, IT- з01, лаб 4, Варіант 7</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<h2>Бардах Максим</h2>
+<p>Тель-Авів</p>
+<p>Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського»</p>
+<p>Хоббі</p>
+<ul class="x" id="u-list">
+    <li class="x">Палатки</li>
+    <li class="x">Подорожі</li>
+    <li class="x">Фотографія</li>
+    <li class="x">Музика</li>
+    <li class="x">Подорожування</li>
+    <li class="x">Кораблі</li>
+    <li class="x">Автомобілі</li>
+</ul>
+
+<p>Улюблені фільми</p>
+<ol id="ordered-list">
+    <li>A Man Called Ove</li>
+    <li>Star Wars</li>
+    <li>Harry Potter</li>
+    <li>Мерзенна вісімка</li>
+</ol>
+
+<article>
+    <p>Мю́нхен — місто на річці Ізар на півдні Німеччини, у федеральній землі Баварія.
+        Вільне місто, яке одночасно є столицею Баварії та адміністративного округу Верхня Баварія.</p>
+</article>
+    <h1>ipsum</h1>
+    <ol id="ordered-list2">
+        <li>A Man Called Ove</li>
+        <li>Star Wars</li>
+        <li>Harry Potter</li>
+        <li>Володар перстнів</li>
+        <li>Кримінальне чтиво</li>
+        <li>Мерзенна вісімка</li>
+    </ol>
+    <p id="demo"></p>
+    <img id="mun" height="200px" src="img/Munich.jpeg" width="25px" alt="munich">
+
+    <button onclick="add()">Додати</button>
+    <button type="button" onclick="zoomIn()">
+        Zoom-In
+    </button>
+
+    <button type="button" onclick="zoomOut()">
+        Zoom-Out
+    </button>
+    <button onclick="remove()">Видалити</button>
+
+    <a href="https://uk.wikipedia.org/wiki/%D0%9C%D1%8E%D0%BD%D1%85%D0%B5%D0%BD">Мюнхен</a>
+
+<script>
+    const collection = document.body.children;
+    let text = "";
+    for (let i = 0; i < collection.length; i++) {
+        text += collection[i].tagName + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
